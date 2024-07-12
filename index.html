@@ -31,15 +31,41 @@
     <main>
 
         <form class="text-white">
-            <label for="age">Quanti anni hai?</label>
-            <input type="number" id="age" name="age" minlength="1" maxlength="3" required>
 
-            <label for="travel-distance">Quanti chilometri vuoi percorrere?</label>
-            <input type="number" id="travel-distance" name="travel-distance" minlength="1" maxlength="4" required>
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-auto">
+                        <label for="age" class="mb-2">Quanti anni hai?</label>
+                        <div>
+                            <input type="number" class="form-control" id="age" name="age" minlength="1" maxlength="3"
+                                required>
+                        </div>
 
-            <button id="submit-button" type="submit">
-                Invia
-            </button>
+                    </div>
+
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-auto">
+                        <label for="travel-distance" class="mb-2">Quanti chilometri vuoi percorrere?</label>
+                        <div>
+                            <input type="number" class="form-control" id="travel-distance" name="travel-distance"
+                                minlength="1" maxlength="4" required>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-auto">
+                        <button id="submit-button" class="btn btn-light" type="submit">
+                            Richiedi
+                        </button>
+                    </div>
+                </div>
+            </div>
+
 
         </form>
 
